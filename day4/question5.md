@@ -1,0 +1,2 @@
+1. import the itertool library from it 
+2.use the cycle(iterable) which prints all values in order from the passed container. It restarts printing from beginning again when all elements are printed in a cyclic manner.
