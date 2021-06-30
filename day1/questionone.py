@@ -1,5 +1,5 @@
 def check_for_leap_year(year) :
-    if year % 4 == 0 and year % 400 == 0:
+    if int(year) % 4 == 0 and int(year) % 400 == 0:
         print(bool(year))
     elif year % 100 == 0:
         print(bool())

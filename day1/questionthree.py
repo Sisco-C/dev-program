@@ -8,6 +8,7 @@ NUMBERS = string.digits
 SYMBOLS = string.punctuation    
 
 from random import *
+allowed_pass_strengths = ("weak","strong","very strong")
 
 pass_strength = input("How strong do you want your password to be?")
     # a weak password will only contain letters while a very strong password will contain both letters, special symbols and alphanumerics
