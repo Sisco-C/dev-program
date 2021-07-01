@@ -1,23 +1,18 @@
 import unittest
 import questionfive
-from questionfive import newlist
+# test that the list is not empty
+class TestDuplicates(unittest.TestCase):
+   def test_isnotnone(self):
+       self.assertIsNotNone(questionfive.List)
+# test that the input is a list
+class Testfortype(unittest.TestCase):
+    def test_type(self):
+        self.assertIsInstance(questionfive.List, list)
+# test that the output is a list
+class TestForOutputType(unittest.TestCase):
+    def test_equality(self):
+     self.assertNotIsInstance(questionfive.remove_duplicate, list)
 
-
-# class TestRemoveDuplicate():
-#     def test_removeduplicate_success(self):
-#         [lis]= [3,3,3,3,1,3,2,6,7]
-#         [newlist] = [3, 1, 2, 6, 7]
-# self.assertEqual(list,newlist)
-
-
-# class TestforDuplicate(unittest.TestCase):
-#     def test_is_there_a_duplicate(self):
-#          self.assertIs(list,newlist)
-
-
-class TestforPresenceinlist(unittest.TestCase):
-    def test_is_a_duplicate(self):
-        self.assertIn(newlist,list)
-
+        
 if __name__ == '__main__':
     unittest.main()
