@@ -7,3 +7,4 @@ def remove_duplicate(list):
 #driver code
 list = [3,3,3,3,1,3,2,6,7]
 print(remove_duplicate(list))
+ 
