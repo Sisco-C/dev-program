@@ -1,6 +1,6 @@
 import csv
 #open the file, while r reads it
-with open("sample.csv", 'r') as file:
+with open("/home/sisko/covid.csv", 'r') as file:
     #creating an object
     csv_file = csv.DictReader(file)
     #iterating over the file
