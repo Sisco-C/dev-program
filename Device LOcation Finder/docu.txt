@@ -1,0 +1,35 @@
+DEVICE LOCATION FINDER
+
+1.Problem definition
+
+This CLI app is an Python application that is used to located dives on different locations on the globe. This system incorporates the use of geolocation API’s. This involves a techniques where a particular ip address is mapped to a particular location.
+
+
+Who?
+The  system enables any user to locate the current location of the client device. In addition to that, it helps with outputting the latitude and longitude details of the device. It can also display a lot more information such as the country, the continent, and to some degree, the street-name This app also helps in the event where a user might want to know the location of a particular client device.
+Individuals or organizations can use the system to  estimate the real-world location of the current client location using their public IP address.
+
+ The system outputs the location details of the client device. This can be helpful when finding the coordinates of a particular location
+
+When?
+This is useful in the event where location details of a device are required, even including their ip address.
+
+Why?
+In the event where a need for the client location of the device is needed, the app comes in handy.
+
+What?
+The app can be installed and run in any environment, with a very friendly user interface. This makes it easy for a user to key in their values
+
+I have used Vscode to develop this project, for the simplicity and easy of use of the Visual Studio Code.
+
+Steps
+
+Import the socket module.
+Import requests and json which are needed for the API calls.
+
+    1. Get the hostname using the socket. gethostname() method and store it in a variable.
+    2. Find the client’s public IP address by passing the hostname as an argument to the socket. gethostbyname() method and store it in a variable.T
+    3. The function takes each IP address and sends the request to the API to get latitude and longitude information along with other information. 
+    4. The output is in json format 
+    5.  Using Ipstack API, to extract the latitude and longitude from the client IP address.
+4. Using geopy/Nominatim, I can be able to get the address of the location
