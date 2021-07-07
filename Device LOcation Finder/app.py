@@ -1,3 +1,7 @@
+from pyfiglet import Figlet
+f = Figlet(font='slant')
+print (f.renderText('DEVICE LOCATION-FINDER APP '))
+
 import socket
 import requests
 import json
@@ -5,7 +9,7 @@ import json
 google_map_api_key = "AIzaSyAS-soEXp_eCcyQ9JrT-qDOBapj-l5m2to"
 ip_stack_api_key = "077d18d9cb8e8dd7ef1b299d2f0410c5"
 
-ip_address = input("Enter your IP Address:") or "ip_addresses"
+ip_address = input("Enter your device's IP Address:") or "ip_addresses"
 
 # Get host name
 def get_host_ip():
@@ -36,7 +40,7 @@ def get_location_details(coordinates):
     location_details_req = requests.get(url)
     req_json = json.loads(location_details_req.text)
     address_components = req_json['results'][0]
-    street_name = address_components['address_components'][0]['long_name']
+    street_name = address_components['address_components'][1]['long_name']
     return street_name
 
 

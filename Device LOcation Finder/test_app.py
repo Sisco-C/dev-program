@@ -1,14 +1,15 @@
 import unittest
 import app
+import pytest
 
 
 class TestAPIkeys(unittest.TestCase):
 # #check for the presence of an google maps API KEY
     def test_googlemaps_api(self):
-        self.assertIsNotNone(app.google_map_api)
+        self.assertIsNotNone(app.google_map_api_key)
 #ckeck for the iptackapi api key
     def test_ipstackapi(self):
-        self.assertIsNotNone(app.ip_stack_api)
+        self.assertIsNotNone(app.ip_stack_api_key)
 
 class Test_IPaddress(unittest.TestCase):
     def test_ip_addresstype(self):

@@ -32,4 +32,4 @@ Import requests and json which are needed for the API calls.
     3. The function takes each IP address and sends the request to the API to get latitude and longitude information along with other information. 
     4. The output is in json format 
     5.  Using Ipstack API, to extract the latitude and longitude from the client IP address.
-4. Using geopy/Nominatim, I can be able to get the address of the location
+4. Using google maps API, I can be able to get the address of the location
